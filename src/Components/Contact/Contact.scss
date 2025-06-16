@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+
+.parent-full{
+    font-family: 'Outfit', sans-serif;
+    background: #ffffff;
+
+    .more-det{
+        text-align: center;
+       margin-bottom: 40px;
+    }
+    .more-det-c{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+
+    }
+    .para{
+        text-align: center;
+        width: 40%;
+        margin-left: 30%;
+        font-size: 16px;
+    }
+    .icons-data{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 3%;
+        gap: 10px;
+        flex-wrap: wrap;
+
+    }
+    .firsticons{
+        margin-top: 60px;
+        border: 1px solid rgb(221, 221, 221);
+        margin-bottom: 14px;
+        box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.284);
+        height: 160px;
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.895);
+        transition: .5s;
+        border-radius: 20px;
+    }
+    .firsticons:hover{
+
+        box-shadow: 4px 3px 10px 3px rgba(0, 0, 0, 0.284);
+        cursor: pointer;
+
+    }
+    .iconss-react{
+        font-size: 30px;
+        background-color: #ffffff;
+        color: rgb(45, 44, 44);
+         
+        margin-left: 45%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .adrresss{
+        text-align: center;
+        font-size: 20px;
+        color: #616060;
+        margin-top: 10px;
+    }
+    .adrress{
+        text-align: center;
+        font-size: 21px;
+        margin-top: 20px;
+        color: #616060;
+    }
+    .adrressss{
+        text-align: center;
+        font-size: 22px;
+        margin-top:16px;
+        color: #616060;
+
+    }
+
+}
