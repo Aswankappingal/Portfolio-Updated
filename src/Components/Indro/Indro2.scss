@@ -442,7 +442,6 @@ $accent-secondary: #ff6b6b;
     width: calc(100% - 8px);
     height: calc(100% - 8px);
     border-radius: 50%;
-
     margin: 4px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.6);
@@ -452,8 +451,8 @@ $accent-secondary: #ff6b6b;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 50%;
-        transition: transform 0.3s ease;
+        border-radius: 30%;
+        transition: transform 0.6s ease;
     }
 }
 
