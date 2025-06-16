@@ -6,7 +6,7 @@ const Indro = () => {
 
   const socialLinks = [
     {
-      name: 'Twitter',
+      name: 'instagram',
       url: 'https://www.instagram.com/__ashvy_732?igsh=MTlxdTVtZHlrd3Axdw',
       icon: (
         <i className="bi bi-instagram"></i>

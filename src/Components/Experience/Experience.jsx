@@ -8,7 +8,7 @@ const Experience = () => {
             <div className='Abilities'>
 
                 <h4>My Abilities</h4>
-                <h2>My Experience</h2>
+                <h2>My Proficiency </h2>
 
 
             </div>
@@ -82,6 +82,11 @@ const Experience = () => {
 
                             <div className='data-main-exp'><i className="fa fa-check" aria-hidden="true"></i>
                                 <span className='data-exp'>Mongo DB</span></div>
+                            <div className='Adv-m'><span id='Adv'>Advanced</span></div>
+
+
+                            <div className='data-main-exp'><i className="fa fa-check" aria-hidden="true"></i>
+                                <span className='data-exp'>Firebase</span></div>
                             <div className='Adv-m'><span id='Adv'>Advanced</span></div>
 
 
