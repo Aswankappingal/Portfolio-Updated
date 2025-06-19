@@ -137,7 +137,7 @@ const Indro = () => {
                 <div className="image-border">
                   <div className="profile-image">
                     <img
-                      src="Aswan.jpg"
+                      src="Aswan-portfolio.jpg"
                       alt="Alex Johnson - Full Stack Developer"
                     />
                   </div>
