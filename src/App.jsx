@@ -22,18 +22,49 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+
+  const scrollToSection = (sectionId) => {
+
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+
+  }
+
   return (
     <>
       {isLoading ? (
         <Preloader />
       ) : (
         <div className="main-content">
-          <Indro />
-          <Projects />
-          <Experience />
-          <Works />
-          <ExperienceE />
-          <Contact />
+          {/* <Indro scrollToSection={scrollToSection} /> */}
+          {/* Add IDs to each section */}
+          <section id="home">
+            <Indro scrollToSection={scrollToSection} />
+          </section>
+
+          <section id="work">
+            <Works />
+
+
+          </section>
+          <section id='Experience'>
+            <ExperienceE />
+
+          </section>
+          <section id="about">
+            <Experience />
+
+            <Projects />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+
         </div>
       )}
     </>

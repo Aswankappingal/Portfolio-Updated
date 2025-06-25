@@ -18,8 +18,8 @@ const Contact = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        console.log(observer,"observer");
-        
+        console.log(observer, "observer");
+
         if (entry.isIntersecting) {
           entry.target.classList.add('animate');
         }
@@ -61,7 +61,7 @@ const Contact = () => {
           <h2>Contact Me</h2>
           <div className="header-underline"></div>
           <p className="section-description">
-            Ready to bring your ideas to life? Let's collaborate and create something amazing together. 
+            Ready to bring your ideas to life? Let's collaborate and create something amazing together.
             I'm always excited to work on new projects and challenges.
           </p>
         </div>
@@ -115,7 +115,7 @@ const Contact = () => {
               <h3>Send me a message</h3>
               <p>Let's discuss your project and how we can work together</p>
             </div>
-            
+
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
@@ -141,7 +141,7 @@ const Contact = () => {
                   <div className="input-underline"></div>
                 </div>
               </div>
-              
+
               <div className="form-group">
                 <input
                   type="text"
@@ -153,7 +153,7 @@ const Contact = () => {
                 />
                 <div className="input-underline"></div>
               </div>
-              
+
               <div className="form-group">
                 <textarea
                   name="message"
@@ -165,7 +165,7 @@ const Contact = () => {
                 ></textarea>
                 <div className="input-underline"></div>
               </div>
-              
+
               <button type="submit" className="submit-btn">
                 <span>Send Message</span>
                 <BiSend />
@@ -184,7 +184,7 @@ const Contact = () => {
               <span>LinkedIn</span>
             </a>
             <a href="#" className="social-link github">
-            <IoLogoGithub />
+              <IoLogoGithub />
               <span>GitHub</span>
             </a>
             <a href="#" className="social-link twitter">
@@ -222,18 +222,19 @@ const Contact = () => {
                 <a href="https://www.instagram.com/__ashvy_732?igsh=MTlxdTVtZHlrd3Axdw" className="social-icon"><FaInstagram /></a>
               </div>
             </div>
-            
+
             <div className="footer-links">
               <div className="link-group">
-                <h4>Navigation</h4>
+                <h4>Tech Stack</h4>
                 <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#experience">Experience</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li>React.js</li>
+                  <li> CSS Scss</li>
+                  <li>Firebase</li>
+                  <li>Node.js</li>
                 </ul>
               </div>
-              
+
+
               <div className="link-group">
                 <h4>Services</h4>
                 <ul>
@@ -243,7 +244,7 @@ const Contact = () => {
                   <li><a href="#">Consulting</a></li>
                 </ul>
               </div>
-              
+
               <div className="link-group">
                 <h4>Contact Info</h4>
                 <ul>
@@ -254,7 +255,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="footer-bottom">
             <div className="footer-divider"></div>
             <div className="footer-copyright">

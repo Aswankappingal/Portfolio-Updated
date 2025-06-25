@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Indro2.scss';
 
-const Indro = () => {
+const Indro = ({ scrollToSection }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const socialLinks = [
@@ -29,14 +29,23 @@ const Indro = () => {
   ];
 
   const navLinks = [
-    { name: 'Home', url: '#' },
-    { name: 'About', url: '#' },
-    { name: 'Work', url: '#' },
-    { name: 'Contact', url: '#' },
+    { name: 'Home', sectionId: 'home' },
+    { name: 'About', sectionId: 'about' },
+    { name: 'Work', sectionId: 'work' },
+    { name: 'Contact', sectionId: 'contact' },
+    { name: 'Experience', sectionId: 'Experience' },
   ];
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleNavClick = (sectionId) => {
+    if (scrollToSection) {
+      scrollToSection(sectionId);
+    }
+    // Close mobile menu after clicking
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -53,7 +62,14 @@ const Indro = () => {
       <header className="modern-header">
         <div className="header-content">
           <div className="logo-container">
-            <a href="#" className="logo">
+            <a
+              href="#"
+              className="logo"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick('home');
+              }}
+            >
               <span className="logo-text">Portfolio</span>
               <div className="logo-underline"></div>
             </a>
@@ -63,9 +79,13 @@ const Indro = () => {
             {navLinks.map((link, index) => (
               <a
                 key={link.name}
-                href={link.url}
+                href={`#${link.sectionId}`}
                 className="nav-link"
                 style={{ '--delay': `${(index + 1) * 0.1}s` }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(link.sectionId);
+                }}
               >
                 {link.name}
                 <div className="nav-indicator"></div>
@@ -116,6 +136,8 @@ const Indro = () => {
                   className="social-link"
                   style={{ '--social-delay': `${(index + 1) * 0.1}s` }}
                   aria-label={social.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {social.icon}
                 </a>
@@ -123,7 +145,10 @@ const Indro = () => {
             </div>
 
             <div className="cta-section">
-              <button className="cta-button">
+              <button
+                className="cta-button"
+                onClick={() => handleNavClick('contact')}
+              >
                 <span className="button-text">Let's Work Together</span>
                 <div className="button-bg"></div>
                 <div className="button-shine"></div>
@@ -137,8 +162,8 @@ const Indro = () => {
                 <div className="image-border">
                   <div className="profile-image">
                     <img
-                      src="Aswan-portfolio.jpg"
-                      alt="Alex Johnson - Full Stack Developer"
+                      src="/Images/Aswan-portfolio.jpg"
+                      alt="Aswan Kappingal - Full Stack Developer"
                     />
                   </div>
                 </div>
