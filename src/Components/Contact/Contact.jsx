@@ -229,7 +229,7 @@ const Contact = () => {
                 <ul>
                   <li>React.js</li>
                   <li> CSS Scss</li>
-                  <li>Firebaswww</li>
+                  <li>Firebasww</li>
                   <li>Node.js</li>
                 </ul>
               </div>
