@@ -47,20 +47,25 @@ function App() {
             <Indro scrollToSection={scrollToSection} />
           </section>
 
-          <section id="work">
-            <Works />
-
-
-          </section>
-          <section id='Experience'>
-            <ExperienceE />
-
-          </section>
           <section id="about">
-            <Experience />
 
             <Projects />
+            <Experience />
+
           </section>
+
+
+
+          <section id='Experience'>
+            <ExperienceE />
+          </section>
+
+
+          <section id="work">
+            <Works />
+          </section>
+
+
           <section id="contact">
             <Contact />
           </section>
